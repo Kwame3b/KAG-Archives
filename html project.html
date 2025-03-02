@@ -6,12 +6,15 @@
     <title>My Biography</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg') no-repeat center center/cover;
-            color: rgb(14, 13, 13);
+            background: url('https://wallpapers.com/images/hd/futuristic-interior-design-concept-36yyne75lqt2qc3z.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #0e0d0d;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,10 +24,11 @@
         }
         .logo {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 50px; 
+            top: 20px;
+            left: 20px;
+            width: 60px; 
             height: auto;
+            filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.3));
         }
         .container {
             width: 80%;
@@ -43,15 +47,16 @@
         }
         .section {
             padding: 50px;
-            background: rgba(31, 31, 31, 0.1);
+            background: rgba(31, 31, 31, 0.2);
             margin: 20px 0;
             border-radius: 20px;
             width: 100%;
-            transition: transform 0.3s ease, background 0.3s ease;
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
         }
         .section:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.3);
             transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         }
         .btn {
             background: #ff9800;
@@ -62,14 +67,17 @@
             font-size: 1.2em;
             border-radius: 10px;
             transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
         .btn:hover {
             background: #e68900;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <img src="C:\Users\kwame\Downloads\DALL·E 2025-02-09 20.53.09 - A black and white digital illustration of a single brick, slanted at an angle. The brick has a realistic texture with visible edges and slight shading.webp" alt="Logo" class="logo"> <!-- Replace with actual logo path -->
+    <img src="C:\Users\kwame\Downloads\logo.webp" alt="Logo" class="logo"> 
     
     <div class="container">
         <h1>Kwame Aboagye-Gyedu</h1>
@@ -79,7 +87,7 @@
     
     <div class="container section">
         <h2>About Me</h2>
-        <p>I am an aspiring computer engineer born and raised in Accra Ghana. I am a student of KNUST and an Odade3(PRESEC alumni). I aspire to be a software developer and a cloud architect. I am of Akan descent, specifically a Sefwi from the Western North Region of Ghana.</p>
+        <p>I am an aspiring computer engineer born and raised in Accra, Ghana. I am a student of KNUST and an Odade3 (PRESEC alumni). I aspire to be a software developer and a cloud architect. I am of Akan descent, specifically a Sefwi from the Western North Region of Ghana.</p>
     </div>
     
     <div class="container section">
