@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form by KAG</title>
+    <title>Contact Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,12 +16,14 @@
         }
 
         form {
-            background: turquoise;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 350px;
-            border: 2px solid #000; 
+            background: rgb(204, 219, 170);
+            padding: 25px;
+            border-radius: 10px;
+            width: 380px;
+            border: 2px solid black;
+            outline: 4px solid rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            transition: all 0.3s ease-in-out;
         }
 
         label {
@@ -33,7 +35,7 @@
 
         input, textarea, select {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #131313;
             border-radius: 5px;
@@ -49,11 +51,16 @@
             background-color: #009dff;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px;
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007acc;
         }
     </style>
 </head>
@@ -64,6 +71,21 @@
    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="residence">Country:</label>
+        <select id="residence" name="residence">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="india">India</option>
+            <option value="ghana">Ghana</option>
+            <option value="other">Other</option>
+        </select>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
